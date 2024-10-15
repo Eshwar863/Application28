@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Switch"
+        app:actionLayout="@layout/switch_item"
+        android:id="@+id/home"/>
+    <item android:title="Item"
+        android:id="@+id/Users"/>
+    <item android:title="Item"
+        android:id="@+id/Loans"/>
+    <item android:title="Item"
+        />
+    <item android:title="Item" />
+    <item android:title="Item" />
+</menu>

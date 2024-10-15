@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#CCCCCC</color>
+    <!-- Light theme colors -->
+    <color name="primaryColor">#FFFFFF</color> <!-- White -->
+    <color name="primaryDarkColor">#B0BEC5</color> <!-- Light Grey -->
+    <color name="accentColor">#70A8BF</color> <!-- Light greyish blue -->
+    <color name="SplashScreencolor">#fefefe</color>
+</resources>
