@@ -11,11 +11,7 @@
       tools:context=".MainActivity"
       tools:ignore="ExtraText">
 
-    <!-- TotalAmount Label -->
-    <!-- TotalAmount Value -->
-    <!-- Date -->
 
-    <!-- Interest Label -->
   <TextView
       android:id="@+id/date"
       android:layout_width="292dp"

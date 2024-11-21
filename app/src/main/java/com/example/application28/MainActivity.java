@@ -31,28 +31,27 @@ public class MainActivity extends AppCompatActivity {
 //        SharedPreferences preferences = getSharedPreferences("Login", MODE_PRIVATE);
 //        preferences.getString("Name","UserName");
 
-        Button button = findViewById(R.id.button2);
+//        Button button = findViewById(R.id.button2);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                SharedPreferences preferences = getSharedPreferences("Login", MODE_PRIVATE);
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("jwtToken", null);
-                editor.apply();
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                SharedPreferences preferences = getSharedPreferences("Login", MODE_PRIVATE);
+//                SharedPreferences.Editor editor = preferences.edit();
+//                editor.putString("jwtToken", null);
+//                editor.apply();
+//                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+//                startActivity(intent);
+//                finish();
+//            }
+//        });
 
         // Set HomeFragment as the default fragment when the activity starts
         if (savedInstanceState == null) {
             loadFragment(new HomeFragment());
         }
 
-        // Set listener to handle fragment changes based on selected menu item
         bottomNavigationView.setOnItemSelectedListener(item -> {
             Fragment selectedFragment = null;
 
