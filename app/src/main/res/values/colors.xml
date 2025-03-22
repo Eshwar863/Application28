@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+
+
     <color name="grey">#CCCCCC</color>
-    <!-- Light theme colors -->
-    <color name="primaryColor">#FFFFFF</color> <!-- White -->
+
     <color name="primaryDarkColor">#B0BEC5</color> <!-- Light Grey -->
-    <color name="accentColor">#70A8BF</color> <!-- Light greyish blue -->
+
     <color name="SplashScreencolor">#fefefe</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#757575</color>
+    <color name="primaryDark">#1976D2</color>
+    <!-- colors.xml -->
+    <color name="primaryColor">#6200EE</color>  <!-- Vibrant Purple -->
+    <color name="accentColor">#03DAC5</color>  <!-- Teal Accent -->
+    <color name="lightGray">#F5F5F5</color>  <!-- Soft Background -->
+    <color name="black">#212121</color>  <!-- Dark Text -->
+    <color name="white">#FFFFFF</color>  <!-- White Background -->
+    <color name="gray">#757575</color>  <!-- Subtitle/Text Gray -->
+
+
+        <color name="backgroundLight">#F5F5F5</color>
+        <color name="textPrimary">#212121</color>
+        <color name="textSecondary">#757575</color>
+        <color name="dividerColor">#E0E0E0</color>
+
+
 </resources>

@@ -8,23 +8,24 @@
     android:clickable="true"
     android:focusable="true">
 
-
-
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/accentColor"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:title="Account Details"
-        app:titleCentered="true"
-        app:titleTextColor="@android:color/darker_gray" />
+        app:navigationIcon="@drawable/back"
+    app:contentInsetStart="0dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onProfileSectionClick"
+    app:title="Account Details"
+    app:titleCentered="true"
+    app:titleTextColor="@android:color/darker_gray" />
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/profileSection"
+        app:contentInsetStart="0dp"
         android:layout_width="391dp"
         android:layout_height="138dp"
         android:layout_marginLeft="5dp"

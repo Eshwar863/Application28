@@ -9,9 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- Profile Image -->
 
-        <!-- Phone Number Field -->
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="247dp"

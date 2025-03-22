@@ -18,4 +18,12 @@
         app:titleTextColor="@android:color/darker_gray"
         app:menu="@menu/sort" />
 
+    <ImageView
+        android:id="@+id/loadingGif"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+
 </FrameLayout>
