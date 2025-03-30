@@ -2,6 +2,11 @@ package com.example.application28.DTO;
 
 public class Amounts {
     private String date;
+    private Long Totalamounts;
+    private Long totalInterestAmount;
+    private Long UserPaidByAmount;
+    private Long CardsAmount;
+
 
     public String getDate() {
         return date;
@@ -51,8 +56,5 @@ public class Amounts {
         CardsAmount = cardsAmount;
     }
 
-    private Long Totalamounts;
-    private Long totalInterestAmount;
-    private Long UserPaidByAmount;
-    private Long CardsAmount;
+
 }

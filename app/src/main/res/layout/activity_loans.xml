@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Add android:id="@+id/main" to the root layout -->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,73 +7,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/backgroundLight"
     tools:context=".MainActivity">
 
-<androidx.appcompat.widget.Toolbar
-android:id="@+id/toolbar"
-android:layout_width="match_parent"
-android:layout_height="?attr/actionBarSize"
-android:background="?attr/colorPrimary"
-android:theme="?attr/actionBarTheme"
-app:title="Loans"
-app:titleTextColor="@android:color/white"
-app:popupTheme="?attr/actionBarPopupTheme" />
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="?attr/actionBarTheme"
+        app:title="Loans"
+        app:titleTextColor="@android:color/white"
+        app:popupTheme="?attr/actionBarPopupTheme" />
 
     <!-- From Date Section -->
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:orientation="horizontal"
-android:padding="16dp"
-android:layout_marginBottom="16dp">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
 
-<EditText
-    android:id="@+id/editTextDateFrom"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:hint="Select From Date" />
-
-<ImageView
-    android:id="@+id/imageViewCalendarFrom"
-    android:layout_width="24dp"
-    android:layout_height="24dp"
-    android:src="@drawable/calendar__1_"
-    android:clickable="true"
-    android:focusable="true"
-    android:layout_marginStart="8dp" />
-</LinearLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDateFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_from_date"
+            android:drawableEnd="@drawable/arrow"
+            android:focusable="false"
+            android:clickable="true" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <!-- To Date Section -->
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:orientation="horizontal"
-android:padding="16dp"
-android:layout_marginBottom="16dp">
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
 
-<EditText
-    android:id="@+id/editTextDateTo"
-    android:layout_width="0dp"
-    android:layout_height="wrap_content"
-    android:layout_weight="1"
-    android:hint="Select To Date" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextDateTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_to_date"
+            android:drawableEnd="@drawable/arrow"
+            android:focusable="false"
+            android:clickable="true" />
+    </com.google.android.material.textfield.TextInputLayout>
 
-<ImageView
-    android:id="@+id/imageViewCalendarTo"
-    android:layout_width="24dp"
-    android:layout_height="24dp"
-    android:src="@drawable/calendar__1_"
-    android:clickable="true"
-    android:focusable="true"
-    android:layout_marginStart="8dp" />
+    <!-- RecyclerView for Modern UI -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
 </LinearLayout>
-
-    <!-- ListView (Replace with RecyclerView if possible) -->
-<ListView
-android:id="@+id/listView"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:layout_marginTop="16dp" />
-
-    </LinearLayout>

@@ -26,7 +26,7 @@ public class LoansActivity extends AppCompatActivity {
     private ImageView imageViewCalendarTo;
     private ListView listView;
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,10 +36,10 @@ public class LoansActivity extends AppCompatActivity {
         // Initialize all views using findViewById
         toolbar = findViewById(R.id.toolbar);
         editTextDateFrom = findViewById(R.id.editTextDateFrom);
-        imageViewCalendarFrom = findViewById(R.id.imageViewCalendarFrom);
+        //imageViewCalendarFrom = findViewById(R.id.imageViewCalendarFrom);
         editTextDateTo = findViewById(R.id.editTextDateTo);
-        imageViewCalendarTo = findViewById(R.id.imageViewCalendarTo);
-        listView = findViewById(R.id.listView);
+        //imageViewCalendarTo = findViewById(R.id.imageViewCalendarTo);
+        //listView = findViewById(R.id.listView);
 
         // Set up the toolbar as the action bar
         setSupportActionBar(toolbar);

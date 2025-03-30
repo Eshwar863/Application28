@@ -61,4 +61,12 @@
     </string>
     <string name="card_type">Card Type</string>
     <string name="card_name">Card Name</string>
+    <string name="view_all">View All</string>
+    <string name="select_from_date">Select From Date</string>
+    <string name="select_to_date">Select To Date</string>
+    <string name="_9_763_58">*******</string>
+    <string name="hide">Hide</string>
+    <string name="balance">Balance</string>
+    <string name="amounthistory">****</string>
+    <string name="datehistory">XX-XX-XXXX</string>
 </resources>

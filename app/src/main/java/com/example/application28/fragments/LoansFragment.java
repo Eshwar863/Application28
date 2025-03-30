@@ -1,5 +1,6 @@
 package com.example.application28.fragments;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -31,26 +32,13 @@ public class LoansFragment extends Fragment {
         // Initialize the "View All" TextView
         tvViewAll = view.findViewById(R.id.tvViewAll);
 
-        // Set a click listener on the "View All" TextView
-        tvViewAll.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d(TAG, "View All clicked"); // Log the click event
-
-                // Check if the activity is not null
-                if (getActivity() != null) {
-                    Log.d(TAG, "Activity context is available");
-                    try {
-                        // Create an intent to launch LoansActivity
-                        Intent intent = new Intent(getActivity(), LoansActivity.class);
-                        startActivity(intent);
-                        Log.d(TAG, "LoansActivity started successfully");
-                    } catch (Exception e) {
-                        Log.e(TAG, "Error starting LoansActivity: " + e.getMessage(), e);
-                    }
-                } else {
-                    Log.e(TAG, "Activity context is null");
-                }
+        tvViewAll.setOnClickListener(v -> {
+            Context context = getContext();
+            if (context != null) {
+                Intent intent = new Intent(context, LoansActivity.class);
+                startActivity(intent);
+            } else {
+                Log.e(TAG, "Context is null - cannot start activity");
             }
         });
 

@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lightGray"
+    android:background="?android:attr/windowBackground"
     android:orientation="vertical"
     tools:context=".fragments.LoansFragment">
 
@@ -14,12 +14,10 @@
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/primaryColor"
+        android:background="?attr/colorPrimary"
         app:titleCentered="true"
         app:title="Loans"
-        app:subtitleTextColor="@color/grey"
-        app:titleTextColor="@android:color/white" />
-
+        app:titleTextColor="?android:attr/textColorPrimaryInverse" />
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
@@ -28,8 +26,8 @@
         app:cardCornerRadius="12dp"
         app:cardElevation="6dp"
         app:strokeWidth="1dp"
-        app:strokeColor="@color/primaryColor"
-        android:background="@color/white">
+        app:strokeColor="?attr/colorPrimary"
+        android:background="?android:attr/colorBackgroundFloating">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:text="Loan ID: 123"
                 android:textSize="16sp"
-                android:textColor="@color/black"
+                android:textColor="?android:attr/textColorPrimary"
                 android:textStyle="bold" />
 
             <!-- Loan Amount -->
@@ -54,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:text="Amount: $5000"
                 android:textSize="16sp"
-                android:textColor="@color/black"
+                android:textColor="?android:attr/textColorPrimary"
                 android:layout_marginTop="8dp" />
 
             <!-- Interest Amount -->
@@ -64,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:text="Interest: $200"
                 android:textSize="16sp"
-                android:textColor="@color/black"
+                android:textColor="?android:attr/textColorPrimary"
                 android:layout_marginTop="8dp" />
 
             <!-- Loan Date -->
@@ -74,11 +72,10 @@
                 android:layout_height="wrap_content"
                 android:text="Date: 2023-10-01"
                 android:textSize="16sp"
-                android:textColor="@color/black"
+                android:textColor="?android:attr/textColorPrimary"
                 android:layout_marginTop="8dp" />
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
-
 
     <!-- Recent Loans Section -->
     <LinearLayout
@@ -94,7 +91,7 @@
             android:text="Recent Loans"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="?android:attr/textColorPrimary"
             android:layout_weight="1" />
 
         <!-- View All Button -->
@@ -102,9 +99,10 @@
             android:id="@+id/tvViewAll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="View All"
+            android:text="@string/view_all"
             android:textSize="14sp"
-            android:textColor="@color/primaryColor"
+            android:textColor="?attr/colorPrimary"
+            android:contextClickable="true"
             android:textStyle="bold"
             android:clickable="true"
             android:focusable="true"
