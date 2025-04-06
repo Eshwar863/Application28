@@ -9,73 +9,40 @@
     android:orientation="vertical"
     tools:context=".fragments.LoansFragment">
 
-    <!-- Toolbar with Back Button -->
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="?attr/colorPrimary"
-        app:titleCentered="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/accentColor"
         app:title="Loans"
-        app:titleTextColor="?android:attr/textColorPrimaryInverse" />
+        app:titleCentered="true"
+        app:titleTextColor="@android:color/darker_gray" />
 
-    <com.google.android.material.card.MaterialCardView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recentLoansRecyclerViewLoansCards"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:padding="8dp"
+        android:scrollbars="vertical"
+        android:visibility="gone"/>
+
+
+    <TextView
+        android:id="@+id/tvNoLoansFound"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        app:cardCornerRadius="12dp"
-        app:cardElevation="6dp"
-        app:strokeWidth="1dp"
-        app:strokeColor="?attr/colorPrimary"
-        android:background="?android:attr/colorBackgroundFloating">
+        android:text="@string/no_loans_found"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:padding="16dp"
+        android:visibility="gone"
+        app:backgroundTint="@android:color/transparent"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textColor="@android:color/darker_gray" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="20dp">
-
-            <!-- Loan ID -->
-            <TextView
-                android:id="@+id/tvLoanId"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Loan ID: 123"
-                android:textSize="16sp"
-                android:textColor="?android:attr/textColorPrimary"
-                android:textStyle="bold" />
-
-            <!-- Loan Amount -->
-            <TextView
-                android:id="@+id/tvLoanAmount"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Amount: $5000"
-                android:textSize="16sp"
-                android:textColor="?android:attr/textColorPrimary"
-                android:layout_marginTop="8dp" />
-
-            <!-- Interest Amount -->
-            <TextView
-                android:id="@+id/tvInterestAmount"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Interest: $200"
-                android:textSize="16sp"
-                android:textColor="?android:attr/textColorPrimary"
-                android:layout_marginTop="8dp" />
-
-            <!-- Loan Date -->
-            <TextView
-                android:id="@+id/tvLoanDate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Date: 2023-10-01"
-                android:textSize="16sp"
-                android:textColor="?android:attr/textColorPrimary"
-                android:layout_marginTop="8dp" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
 
     <!-- Recent Loans Section -->
     <LinearLayout
@@ -88,7 +55,7 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Recent Loans"
+            android:text="@string/recent_loans"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="?android:attr/textColorPrimary"
@@ -102,19 +69,23 @@
             android:text="@string/view_all"
             android:textSize="14sp"
             android:textColor="?attr/colorPrimary"
-            android:contextClickable="true"
             android:textStyle="bold"
             android:clickable="true"
             android:focusable="true"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:minHeight="48dp"
+            android:minWidth="48dp"
+            android:gravity="center" />
+
     </LinearLayout>
 
     <!-- RecyclerView for Recent Loans -->
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recentLoansRecyclerView"
+        android:id="@+id/recentLoansRecyclerViewRecentloans"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="8dp"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        />
 
 </LinearLayout>

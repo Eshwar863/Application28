@@ -63,11 +63,17 @@ public class HistoryFragment extends Fragment {
             transactions.add(new Transaction(1L, 5000L, "Totals", LocalDateTime.now(), "Loan Payment"));
             transactions.add(new Transaction(2L, 3000L, "InterestUpdated", LocalDateTime.now(), "Credit Card Bill"));
             transactions.add(new Transaction(1L, 5000L, "Totals", LocalDateTime.now(), "Loan Payment"));
+            transactions.add(new Transaction(1L, 5000L, "Loans", LocalDateTime.now(), "Loan Payment"));
+            transactions.add(new Transaction(2L, 3000L, "Cards", LocalDateTime.now(), "Credit Card Bill"));
             transactions.add(new Transaction(2L, 3000L, "InterestUpdated", LocalDateTime.now(), "Credit Card Bill"));
             transactions.add(new Transaction(1L, 5000L, "Loans", LocalDateTime.now(), "Loan Payment"));
+            transactions.add(new Transaction(1L, 5000L, "Loans", LocalDateTime.now(), "Loan Payment"));
+            transactions.add(new Transaction(2L, 3000L, "Cards", LocalDateTime.now(), "Credit Card Bill"));
             transactions.add(new Transaction(2L, 3000L, "Cards", LocalDateTime.now(), "Credit Card Bill"));
 
             transactions.add(new Transaction(1L, 5200L, "Totals", LocalDateTime.now(), "Loan Payment"));
+            transactions.add(new Transaction(1L, 5000L, "Loans", LocalDateTime.now(), "Loan Payment"));
+            transactions.add(new Transaction(2L, 3000L, "Cards", LocalDateTime.now(), "Credit Card Bill"));
             transactions.add(new Transaction(2L, 3100L, "InterestUpdated", LocalDateTime.now(), "Credit Card Bill"));
             transactions.add(new Transaction(1L, 4800L, "Totals", LocalDateTime.now(), "Loan Payment"));
             transactions.add(new Transaction(2L, 2900L, "InterestUpdated", LocalDateTime.now(), "Credit Card Bill"));
@@ -75,7 +81,7 @@ public class HistoryFragment extends Fragment {
             transactions.add(new Transaction(1L, 5300L, "Loans", LocalDateTime.now(), "Loan Payment"));
             transactions.add(new Transaction(2L, 3200L, "Cards", LocalDateTime.now(), "Credit Card Bill"));
 
-            
+
         }
 
         // Set adapter

@@ -69,4 +69,14 @@
     <string name="balance">Balance</string>
     <string name="amounthistory">****</string>
     <string name="datehistory">XX-XX-XXXX</string>
+    <string name="no_loans_found">You currently have no loans.</string>
+    <string name="recent_loans">Recent Loans</string>
+    <string name="loan_id_123456">Loan ID: 123456</string>
+    <string name="_2025_04_06">2025-04-06</string>
+    <string name="_50_000">₹50,000</string>
+    <string name="interest_12">Interest: 1.5%</string>
+    <string name="loan_id_1234561">Loan ID: 123456</string>
+    <string name="date_2025_04_06">Date: 2025-04-06</string>
+    <string name="_50_0000">₹50,000</string>
+    <string name="interest_120">Interest: 12%</string>
 </resources>
