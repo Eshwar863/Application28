@@ -50,6 +50,7 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     implementation (libs.material.v180)
     implementation (libs.retrofit)
+    implementation (libs.material.v1110)
     implementation (libs.converter.gson)
     implementation (libs.material.v190)
     implementation (libs.glide)

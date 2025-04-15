@@ -1,6 +1,6 @@
 package com.example.application28.Activity;
 
-import android.annotation.SuppressLint;
+
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.widget.EditText;
@@ -77,8 +77,7 @@ public class LoansActivity extends AppCompatActivity {
 
     }
     private void showDatePickerDialog(EditText editText) {
-        // Implement a date picker dialog and set the selected date to the EditText
-        // Example:
+
         Calendar calendar = Calendar.getInstance();
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);

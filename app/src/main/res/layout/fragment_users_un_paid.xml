@@ -6,9 +6,14 @@
     tools:context=".fragments.userspaid.UsersUnPaid">
 
 
-    <TextView
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvusersunpaid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Unpaid" />
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:contentDescription="@string/list_of_paid_users"/>
+
 
 </FrameLayout>

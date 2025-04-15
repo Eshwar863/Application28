@@ -114,7 +114,6 @@ public class HistoryFragment extends Fragment {
             nf.setMinimumFractionDigits(2);
             nf.setMaximumFractionDigits(2);
             String formattedAmount = "₹" + nf.format(Double.parseDouble(tvBalance.getText().toString().replace("₹", "").replace(",", "")));
-
             tvBalance.setText(formattedAmount);
         } else {
             tvBalance.setText("********");

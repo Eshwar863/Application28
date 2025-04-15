@@ -6,9 +6,12 @@
     tools:context=".fragments.userspaid.UsersPaid">
 
 
-    <TextView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvuserspaid"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Paid" />
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:contentDescription="@string/list_of_paid_users"/>
 
 </FrameLayout>

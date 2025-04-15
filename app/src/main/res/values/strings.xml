@@ -79,4 +79,8 @@
     <string name="date_2025_04_06">Date: 2025-04-06</string>
     <string name="_50_0000">₹50,000</string>
     <string name="interest_120">Interest: 12%</string>
+    <string name="phone_9876543210">Phone: 9876543210</string>
+    <string name="username_john_doe">Username: John Doe</string>
+    <string name="id_1">ID: 1</string>
+    <string name="list_of_paid_users">List of paid users</string>
 </resources>

@@ -8,22 +8,17 @@ import android.util.Log;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 import android.widget.TextView;
-
-import com.example.application28.Activity.LoansActivity;
 import com.example.application28.Adapters.LoansCardsAdapter;
 import com.example.application28.DTO.Loans;
 import com.example.application28.LoginActivity;
 import com.example.application28.R;
-
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Arrays;
+
 import java.util.List;
 
 public class LoansFragment extends Fragment {
